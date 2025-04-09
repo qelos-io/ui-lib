@@ -1,0 +1,35 @@
+{
+  "name": "main-qelos-ui-lib",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p \"build-only {@}\" \"build-app {@}\" -- && npm run modify-manifest",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "build-app": "vite build --config vite.app.config.ts && mv dist-app/* dist",
+    "type-check": "vue-tsc --build",
+    "modify-manifest": "tsx scripts/modify-manifest.ts"
+  },
+  "dependencies": {
+    "@qelos/sdk": "^3.7.4",
+    "date-fns": "^4.1.0",
+    "element-plus": "~2.7.8",
+    "lucide-vue-next": "^0.475.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.0",
+    "@types/node": "^22.10.2",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "npm-run-all2": "^7.0.2",
+    "tsx": "^4.7.0",
+    "typescript": "~5.6.3",
+    "vite": "^6.0.5",
+    "vite-plugin-vue-devtools": "^7.6.8",
+    "vue-tsc": "^2.1.10"
+  }
+}

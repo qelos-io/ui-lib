@@ -1,0 +1,19 @@
+{
+    "name": "{{PACKAGE_NAME}}",
+    "authAcquire": {
+      "refreshTokenKey": "refresh_token",
+      "accessTokenKey": "access_token"
+    },
+    "microFrontends": [],
+    "subscribedEvents": [],
+    "injectables": [
+      {
+        "name": "{{PACKAGE_NAME}}",
+        "description": "",
+        "html": "<script type=\"text/javascript\" src=\"{{PUBLIC_URL}}/qelos-ui-lib.umd.cjs\"></script>\n<link rel=\"stylesheet\" href=\"{{PUBLIC_URL}}/qelos-ui-lib.css\">",
+        "active": true
+      }
+    ],
+    "navBarGroups": [],
+    "cruds": []
+  }
