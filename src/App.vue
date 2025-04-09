@@ -10,5 +10,9 @@ const sdk = new QelosSDK({
 
 <template>
   <h1>Demo App</h1> 
+  <p>
+    In order to use this library inside a Qelos app, copy this manifest URL and create a new plugin from it:
+    <input type="text" :value="manifestURL" readonly />
+  </p>
   <HelloQelos :sdk="sdk" />
 </template>
