@@ -6,6 +6,8 @@ const sdk = new QelosSDK({
   appUrl: 'https://api.qelos.io',
   fetch: globalThis.fetch.bind(globalThis),
 });
+
+const manifestURL = location.origin + '/play-manifest.json';
 </script>
 
 <template>
